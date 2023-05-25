@@ -107,9 +107,20 @@ void DoubleLinkedList::ascending() {
 	else {
 		cout << "\nRecords in descending order of roll number one :" << endl;
 		Node* currentNode = start;
-		while (currentNode != NULL)
+		while (currentNode != NULL) {
 			cout << currentNode->noMhs << " " << currentNode->nama << endl;
 			currentNode = currentNode->next;
+		}
 	}
 }
 
+void DoubleLinkedList::descending() {
+	if (listEmpty())
+		cout << "\nlist is empty" << endl;
+	else {
+		cout << "\nBarcode in descending order of roll number are: " << endl;
+		Node* currentNode = start;
+		while (currentNode->next != NULL)
+			currentNode = currentNode->next;
+	}
+}
