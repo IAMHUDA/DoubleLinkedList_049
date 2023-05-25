@@ -71,9 +71,22 @@ void DoubleLinkedList::addNode() {
 	current->next = newNode;
 }
 
+
+
 bool DoubleLinkedList::deleteNode(int rollNo) {
 	Node* previous, * current;
 	previous = current = NULL;
-	if 
+	if (search(rollNo, &previous, &current) == false)
+		return false;
+
+	if (current->next != NULL)
+		current->next->prev = previous;
+	if (previous != NULL)
+		previous->next = current->next;
+	else
+		start = current->next;
+
+	delete current;
+	return true;
 }
 
