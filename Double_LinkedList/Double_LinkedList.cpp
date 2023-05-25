@@ -177,6 +177,7 @@ int main() {
 			cout << "6.exit" << endl;
 			cout << "\nenter your choice (1-6): ";
 			char ch;
+			cin >> ch;
 
 			switch (ch) {
 			case '1':
