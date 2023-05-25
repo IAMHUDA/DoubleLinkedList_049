@@ -22,5 +22,7 @@ public:
 	bool listEmpty();
 	void ascending();
 	void descending();
+	void hapus();
+	void searchdata();
 };
 
