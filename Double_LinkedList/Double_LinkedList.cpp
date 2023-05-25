@@ -26,7 +26,11 @@ public:
 	void searchdata();
 };
 
-void DoubleLinkedList::addNode() {
+DoubleLinkedList::DoubleLinkedList() {
 	start = NULL;
+}
+
+void DoubleLinkedList::addNode() {
+
 }
 
